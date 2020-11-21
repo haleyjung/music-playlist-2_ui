@@ -32,4 +32,9 @@ body {
 
 .screen--bar i {
   cursor: pointer;
+  color: var(--purple);
+}
+
+.screen--bar i:hover {
+  color: lightpink;
 }

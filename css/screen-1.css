@@ -14,6 +14,11 @@
   margin-bottom: 20px;
 }
 
+.artist-profile img:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
 .artist-profile span {
   margin-top: 10px;
 }
@@ -48,9 +53,18 @@ button {
   cursor: pointer;
 }
 
-button:first-child{
+button:first-child:focus,
+button:last-child:focus {
+  outline: 0;
+}
+
+button:first-child {
   color: white;
   background-color: var(--purple);
+}
+
+button:first-child:hover {
+  box-shadow: inset 0 2px 6px 0px rgba(140, 0, 255, 1);
 }
 
 button:last-child {
@@ -63,6 +77,26 @@ button:last-child {
 
 button:last-child i {
   padding-right: 5px;
+}
+
+@keyframes heartBeat {
+    0% {
+    color: var(--purple);
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.2);
+  }
+  100% {
+    color: var(--purple);
+    transform: none;
+  }
+}
+
+button:last-child i:hover {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }
 
 /* 3. Scroller */
@@ -91,7 +125,24 @@ button:last-child i {
 
 .playlist:nth-child(2) {
   border-radius: 20px;
-  box-shadow: 0.5px 12px 16px -2px rgba(200, 0, 0, .2);
+  box-shadow: 0.5px 8px 10px -2px rgba(200, 0, 0, .1);
+}
+
+@keyframes selectedMusic {
+    0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.015);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.playlist:nth-child(2):hover {
+  will-change: transform;
+  animation: selectedMusic 1.5s linear infinite;
 }
 
 .playlist img {
@@ -183,8 +234,12 @@ button:last-child i {
 
 .playlist i {
   opacity: .5;
-  color: purple;
+  color: var(--purple);
   cursor: pointer;
+}
+
+.playlist i:hover {
+  opacity: 1;
 }
 
 /* Play bar */
@@ -227,4 +282,8 @@ button:last-child i {
 .play-bar--icons i {
   padding: 0px 0px 0px 20px;
   cursor: pointer;
+}
+
+.play-bar--icons i:hover{
+  color: purple;
 }
