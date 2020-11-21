@@ -22,6 +22,7 @@
   font-size: 22px;
   font-weight: 700;
   color: purple;
+  cursor: pointer;
 }
 
 .artist-profile--genre {
@@ -44,6 +45,7 @@ button {
   font-size: 12px;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 button:first-child{
@@ -90,6 +92,7 @@ button:last-child i {
   height: 35px;
   width: 35px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .playlist--thumbnail {
@@ -162,17 +165,20 @@ button:last-child i {
 .playlist span:first-child {
   font-size: 11px;
   color: lightpink;
+  cursor: pointer;
 }
 
 .playlist span:last-child {
   font-size: 12px;
   font-weight: 500;
   color: purple;
+  cursor: pointer;
 }
 
 .playlist i {
   opacity: .5;
   color: purple;
+  cursor: pointer;
 }
 
 /* Play bar */
@@ -213,16 +219,6 @@ button:last-child i {
 }
 
 .play-bar--icons i {
-    padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 20px;
+  cursor: pointer;
 }
-
-/* <div class="play-bar">
-        <div class="play-bar--caption">
-          <span>Dingo X BIBI</span>
-          <span>she got it</span>
-        </div>
-        <div class="play-bar--icons">
-          <i class="fas fa-step-backward"></i>
-          <i class="fas fa-pause"></i>
-          <i class="fas fa-step-forward"></i>
-        </div> */

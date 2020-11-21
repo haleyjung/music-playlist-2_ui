@@ -30,3 +30,7 @@ body {
   padding: 20px;
   margin-top: 20px;
 }
+
+.screen--bar i {
+  cursor: pointer;
+}
