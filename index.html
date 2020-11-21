@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/screen-1.css">
-    <link rel="stylesheet" href="css/screen-2.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,18 +20,139 @@
     <!-- Screen 1 -->
     <div class="screen">
       <div class="screen--bar">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-search"></i>
       </div>
 
-      <div class="artist">
+      <div class="artist-profile">
+        <img src="https://kprofiles.com/wp-content/uploads/2019/05/593C13DC-602D-4E3F-8F0C-EA8C4D86C63E.jpeg" alt="">
+        <span class="artist-profile--name">BIBI</span>
+        <span class="artist-profile--genre">R&B</span>
       </div>
 
       <div class="btn">
+        <button>Shuffle</button>
+        <button>
+          <i class="fas fa-heart fa-lg"></i>
+          <span>1,100</span>
+        </button>
       </div>
 
-      <div class="playlist">
+      <div class="scroller">
+
+        <!-- #1 -->
+        <div class="playlist">
+          <div class="playlist--thumbnail">
+            <img src="https://hiphopkr.com/wp-content/uploads/2020/11/chancellor-automatic-remix.jpg" alt="">
+          </div>
+          <div class="playlist--caption">
+            <span>Various Artists</span>
+            <span>Remix</span>
+          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+
+        <!-- #2 -->
+        <div class="playlist">
+          <div class="playlist--thumbnail">
+            <img src="https://hiphopkr.com/wp-content/uploads/2020/08/bibi-cigarette-and-condom.jpg" alt="">
+            <div class="playlist--sound-bar">
+              <div class="sound-bar" id="sound-bar-1"></div>
+              <div class="sound-bar" id="sound-bar-2"></div>
+              <div class="sound-bar" id="sound-bar-3"></div>
+            </div>
+          </div>
+          <div class="playlist--caption">
+            <span>Dingo X BIBI</span>
+            <span>she got it</span>
+          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+
+        <!-- #3 -->
+        <div class="playlist">
+          <div class="playlist--thumbnail">
+            <img src="https://t2.genius.com/unsafe/220x220/https%3A%2F%2Fimages.genius.com%2F296f349927c30471bd6751ec39e87384.600x600x1.jpg" alt="">
+          </div>
+          <div class="playlist--caption">
+            <span>BIBI</span>
+            <span>Fedexx Girl</span>
+          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+
+        <!-- #4 -->
+        <div class="playlist">
+          <div class="playlist--thumbnail">
+            <img src="https://t2.genius.com/unsafe/220x220/https%3A%2F%2Fimages.genius.com%2F07bc27bd5172c4ed2d75e49ad7e890d0.600x600x1.jpg" alt="">
+          </div>
+          <div class="playlist--caption">
+            <span>BIBI</span>
+            <span>KAZINO</span>
+          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+
+        <!-- #5 -->
+        <div class="playlist">
+          <div class="playlist--thumbnail">
+            <img src="https://t2.genius.com/unsafe/220x0/https%3A%2F%2Fimages.genius.com%2F8c47a50e518045efcf029e39ba80131e.600x600x1.jpg" alt="">
+          </div>
+          <div class="playlist--caption">
+            <span>BIBI</span>
+            <span>Step?</span>
+          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+
+        <!-- #6 -->
+        <div class="playlist">
+          <div class="playlist--thumbnail">
+            <img src="https://m.media-amazon.com/images/I/71iwSjObFYL._SS500_.jpg" alt="">
+          </div>
+          <div class="playlist--caption">
+            <span>BIBI</span>
+            <span>LISTEN</span>
+          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+
+        <!-- #7 -->
+        <div class="playlist">
+          <div class="playlist--thumbnail">
+            <img src="https://images.genius.com/afb403daa66ae90fe9402692973c3a47.600x600x1.jpg" alt="">
+          </div>
+          <div class="playlist--caption">
+            <span>BIBI</span>
+            <span>BINU</span>
+          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+
+        <!-- #8 -->
+        <div class="playlist">
+          <div class="playlist--thumbnail">
+            <img src="https://hiphopkr.com/wp-content/uploads/2020/07/bibi-im-good-at-goodbyes.jpg" alt="">
+          </div>
+          <div class="playlist--caption">
+            <span>BIBI</span>
+            <span>Fly with Me</span>
+          </div>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+
       </div>
 
       <div class="play-bar">
+        <div class="play-bar--caption">
+          <span>Dingo X BIBI</span>
+          <span>she got it</span>
+        </div>
+        <div class="play-bar--icons">
+          <i class="fas fa-step-backward fa-xs"></i>
+          <i class="fas fa-pause fa-xs"></i>
+          <i class="fas fa-step-forward fa-xs"></i>
+        </div>
       </div>
     </div>
 
@@ -41,11 +160,13 @@
     <!-- Screen 2 -->
     <div class="screen">
       <div class="screen--bar">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-ellipsis-v"></i>
       </div>
 
       <div class="album-img"></div>
       <div class="music-caption"></div>
-      <div class-"play-bar-2"></div>
+      <div class-"play-range"></div>
       <div class="play-btn"></div>
 
     </div>
